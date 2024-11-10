@@ -5,6 +5,8 @@ services:
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
+    depends_on:
+      - cosmosdb
     
   cosmosdb:
     image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator
