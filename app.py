@@ -1,12 +1,13 @@
 from azure.cosmos import CosmosClient, PartitionKey
+import urllib3
+
+urllib3.disable_warnings()
 
 client = CosmosClient(
-    url="https://cosmosdb:8081",
-    credential=(
-        "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGG"
-        "yPMbIZnqyMsEcaGQy67XIw/Jw=="
+    "https://cosmosdb:8081",    
+    "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw=="
     ),
-)
+
 
 database = client.create_database_if_not_exists(
     id="cosmicworks",
