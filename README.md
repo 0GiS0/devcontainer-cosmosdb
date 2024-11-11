@@ -14,11 +14,8 @@ python3 app.py
 
 To access the CosmosDB Emulator Data Explorer, you can use the following URL:
 
-If you are using a local Dev Container, you can use the following command to get the URL:
+If you are using a local Dev Container, you can use the following command to get the URL: `https://localhost:8081/_explorer/index.html`
 
-```
-echo "https://localhost:8081/_explorer/index.html"
-```
 
 If you are using GitHub Codespaces, you can use the following command to get the URL:
 
