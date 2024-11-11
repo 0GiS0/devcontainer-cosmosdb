@@ -1,5 +1,7 @@
 from azure.cosmos import CosmosClient, PartitionKey
+import urllib3
 
+urllib3.disable_warnings()
 
 
 client = CosmosClient(
