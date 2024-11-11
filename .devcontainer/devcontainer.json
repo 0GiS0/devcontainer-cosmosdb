@@ -17,7 +17,8 @@
 	"portsAttributes": {
 		"8081": {
 			"label": "Cosmos DB Emulator",
-			"onAutoForward": "notify"
+			"onAutoForward": "notify",
+			"protocol": "https"
 		}
 	},
 

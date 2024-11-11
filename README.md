@@ -8,7 +8,7 @@ This is a simple example of how to run the CosmosDB Emulator on a Dev Container.
 To access the CosmosDB Emulator Data Explorer, you can use the following URL:
 
 ```
-https://localhost:8081/_explorer/index.html
+echo "https://$CODESPACE_NAME-8081.app.github.dev/_explorer/index.html"
 ```
 
 Happy coding! 🚀
