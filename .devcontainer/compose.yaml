@@ -15,7 +15,7 @@ services:
     ports:
     - "8081:8081"
     volumes:
-      - cosmosdb-data:/var/opt/data
+      - cosmosdb-data:/tmp/cosmos/appdata
 
 volumes:
   cosmosdb-data:
