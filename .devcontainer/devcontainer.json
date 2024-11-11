@@ -14,8 +14,24 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [8081],
 
+	"portsAttributes": {
+		"8081": {
+			"label": "Cosmos DB Emulator",
+			"onAutoForward": "notify"
+		}
+	},
+
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": ".devcontainer/post-create.sh"
+	"postCreateCommand": ".devcontainer/post-create.sh && pip install -r requirements.txt",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-cosmosdb",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -5,7 +5,7 @@
 
 set -euxo pipefail
 
-COSMOS__ENDPOINT=https://$(docker inspect cosmos -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'):8081
+COSMOS__ENDPOINT=https://cosmosdb:8081
 
 # Try to get the emulator cert in a loop
 until sudo curl -ksf "${COSMOS__ENDPOINT}/_explorer/emulator.pem" -o '/usr/local/share/ca-certificates/emulator.crt'; do
